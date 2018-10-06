@@ -1,0 +1,7 @@
+{
+"compilerOptions": {
+        "noImplicitAny": true,
+        "source-map": true,
+        "target": "es2018"
+    }
+}
