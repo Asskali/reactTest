@@ -4,7 +4,9 @@
   "description": "Experimenting with React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/webpack && cp public/index.html dist",
+    "lint": "./node_modules/.bin/tslint -c tslint.json 'src/**/*.tsx'"
   },
   "repository": {
     "type": "git",

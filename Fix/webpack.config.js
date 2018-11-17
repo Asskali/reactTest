@@ -15,12 +15,18 @@ module.exports = {
             {
                 test: /\.(ts|tsx)$/,
                 loader: "awesome-typescript-loader",
+            },
+            {
+                test: /\.css$/,
                 use: [
-                    "style-loader", // creates style nodes from JS strings
-                    "css-loader", // translates CSS into CommonJS
-                    "sass-loader" // compiles Sass to CSS, using Node Sass by default
+                    { loader: 'style-loader' }, // creates style nodes from JS strings
+                    { loader: 'css-loader' } // translates CSS into CommonJS
                 ]
             },
+            {
+                test: /\.scss$/,
+                loader: 'sass-loader' // compiles Sass to CSS, using Node Sass by default
+            }
         ]
     },
 };
