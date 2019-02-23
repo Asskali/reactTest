@@ -1,5 +1,13 @@
-ui.button {
-    .adam-knapp {
-        background-color: red;
-    }
+
+.adam-knapp {
+    background-color: red !important;
+}
+
+.adam-header {
+    margin-left: 41% !important;
+    margin-right: auto !important;
+}
+
+.adam-header:before {
+    content: none !important;
 }
