@@ -1,20 +1,18 @@
 /*tslint:disable-next-line*/
 import React from 'react';
 
-interface IHomeProps {
+interface IFilmsProps {
   title: string;
   sideMenu: any;
 }
 
-class Home extends React.Component<IHomeProps, any> {
+export default class Films extends React.Component<IFilmsProps, any> {
 
   render() {
     return (
       <div>
-          HOME
+          FILMS
       </div>
     );
   }
 }
-
-export default Home;

@@ -27,8 +27,6 @@ export default class App extends React.Component<IAppProps, IAppState> {
         <Container textAlign="center">
           <Head title={this.props.message} sideMenu={this.handleSidebarToggle}></Head>
           <AdamSidebar showSideBar={this.state.showSideBar} />
-          <Button onClick={this.handleSidebarToggle}
-            className="adam-knapp" type="primary" content="Legg til spill" />
           <Main />
         </Container>
       </div>
@@ -36,7 +34,6 @@ export default class App extends React.Component<IAppProps, IAppState> {
   }
 
   handleSidebarToggle = () => {
-    console.dir(this.state.showSideBar);
     this.setState({ showSideBar: !this.state.showSideBar });
   }
 }

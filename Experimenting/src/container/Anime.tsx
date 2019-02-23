@@ -1,20 +1,18 @@
 /*tslint:disable-next-line*/
 import React from 'react';
 
-interface IHomeProps {
+interface IAnimeProps {
   title: string;
   sideMenu: any;
 }
 
-class Home extends React.Component<IHomeProps, any> {
+export default class Anime extends React.Component<IAnimeProps, any> {
 
   render() {
     return (
       <div>
-          HOME
+          ANIME
       </div>
     );
   }
 }
-
-export default Home;
