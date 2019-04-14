@@ -24782,8 +24782,21 @@ body.pushable > .pusher {
   100% {
     background-color: #fcfcfd; } }
 
-ui.button .adam-knapp {
-  background-color: red; }
+.adam-knapp {
+  background-color: red !important; }
+
+.adam-header {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.adam-header:before {
+  content: none !important; }
+
+.adam-header {
+  color: red !important; }
+
+.adam-menu {
+  background-color: black !important; }
 
 
 /*# sourceMappingURL=main.css.map*/

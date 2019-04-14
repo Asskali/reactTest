@@ -1,5 +1,7 @@
 /*tslint:disable-next-line*/
 import React from 'react';
+import GameTable from '../components/GameTable';
+import { GameGenre } from '../enum/enum';
 
 interface IGamesProps {
   title: string;
@@ -9,10 +11,12 @@ interface IGamesProps {
 export default class Games extends React.Component<IGamesProps, any> {
 
   render() {
+    const gamesList = [{ title: 'Horizon Zero Dawn', genre: GameGenre.ActionRPG, rating: 5 }];
+
     return (
-      <div>
-          GAMES
-      </div>
+        <>
+          <GameTable games={gamesList} />
+        </>
     );
   }
 }
