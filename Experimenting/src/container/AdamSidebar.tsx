@@ -1,10 +1,11 @@
 /*tslint:disable-next-line*/
 import React from 'react';
-import { Link, Redirect, RouteComponentProps, withRouter } from 'react-router-dom';
+import { RouteComponentProps, withRouter } from 'react-router-dom';
 import { Icon, Menu, Sidebar } from 'semantic-ui-react';
 
 interface ISidebarProps extends RouteComponentProps<any>{
   showSideBar: boolean;
+  history: any;
 }
 
 class AdamSidebar extends React.Component<ISidebarProps> {
@@ -65,4 +66,4 @@ class AdamSidebar extends React.Component<ISidebarProps> {
   }
 }
 
-export default withRouter<ISidebarProps>(AdamSidebar);
+export default withRouter(AdamSidebar);

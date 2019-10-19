@@ -3,7 +3,8 @@
     "extends": "tslint-config-airbnb",
     "jsRules": {},
     "rules": {
-        "ordered-imports": true
+        "ordered-imports": true,
+        "function-name": false
     },
     "rulesDirectory": []
 }
