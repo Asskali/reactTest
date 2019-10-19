@@ -1,7 +1,8 @@
 /*tslint:disable-next-line*/
 import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router';
-import { GridRow, Header, Icon, Menu } from 'semantic-ui-react';
+import { Icon, Menu } from 'semantic-ui-react';
+import MyContext from '../context/MyContext';
 
 interface IHead extends RouteComponentProps{
   title: string;
@@ -9,7 +10,7 @@ interface IHead extends RouteComponentProps{
 }
 
 class Head extends React.Component<IHead, any> {
-
+  static contextType = MyContext;
   render() {
     return (
       <div>
@@ -18,7 +19,7 @@ class Head extends React.Component<IHead, any> {
             <Icon name="bars" color="red"/>
           </Menu.Item>
           <Menu.Item header className="adam-header">
-            Adam's site
+            {this.context.title}
           </Menu.Item>
           <Menu.Item header className="adam-header-right">
             {this.currentIcon()}
